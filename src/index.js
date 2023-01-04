@@ -1,4 +1,6 @@
-import { homepage } from "./home";
+import {homepage} from './home';
+import {menu} from './menu';
+import {contact} from './contact';
 const body = document.querySelector('body');
 const content = document.querySelector('#content');
 const tab_bar = document.createElement('nav');
@@ -11,8 +13,10 @@ homeTab.textContent = 'Home';
 homeTab.page = homepage;
 const menuTab = document.createElement('div');
 menuTab.textContent = 'Menu';
+menuTab.page = menu;
 const contactTab = document.createElement('div');
 contactTab.textContent = 'Contact';
+contactTab.page = contact;
 
 const tabs = [homeTab, menuTab, contactTab];
 tabs.forEach(tab => {
